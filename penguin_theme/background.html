@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="shortcut icon" type="image/png" href="upload/logolg.png"/>
+    <script src="js/placeholderTypewriter.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <style>
+
+        .feel-user
+        {
+            position: relative;
+            background: url("upload/map.png");
+            height: 500px;
+        }
+
+        .comment-users
+        {
+          position: absolute;
+
+        }
+
+        .commend
+        {
+            width: 70%;
+            border-radius: 4px;
+            padding: 9px 8px;
+            box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+            -webkit-clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 85%, 49% 86%, 46% 100%, 46% 100%, 36% 86%, 0% 85%);
+            clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 85%, 49% 86%, 46% 100%, 46% 100%, 36% 86%, 0% 85%);
+        }
+
+        .img-user1
+        {
+            position: absolute;
+            left: 17%;
+        }
+        .comment-users
+        {
+            position: absolute;
+
+        }
+        .comment-users1
+        {
+            position: absolute;
+           top: calc(100% + 170px);
+        }
+        .comment-users2
+        {
+            position: absolute;
+            top: calc(100% + 20px);
+        }
+        .comment-users3
+        {
+            position: absolute;
+            top: calc(100% + 200px);
+        }
+
+        .img-user2
+        {
+            position: absolute;
+            transform: rotate(45deg);
+            left: 20%;
+        }
+        .img-user3
+        {
+            position: absolute;
+            transform: rotate(30deg);
+            left: 30%;
+        }
+        .img-user4
+        {
+            position: absolute;
+            transform: rotate(30deg);
+            left: 30%;
+        }
+        .dl-icon
+        {
+            animation: style 0.4s;
+            animation-iteration-count: infinite;
+        }
+        .media-hover strong:hover
+        {
+            cursor: pointer;
+        }
+
+        @keyframes style {
+            from{
+                color: #d9534f;
+            }
+            to{
+                color: #eb9316;
+            }
+
+        }
+        hr.hr-footer {
+            height: 6px;
+            background: url("http://ibrahimjabbari.com/english/images/hr-12.png");
+        }
+        @media screen and (max-width: 768px) {
+            html {
+                font-size:20px;
+            }
+        }
+
+        @media screen and (max-width: 568px) {
+            html {
+                font-size:0.8em;
+            }
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="wraper">
+        <nav class="navbar navbar-toggleable-md navbar-toggleable-sm  navbar-inverse fixed-top menu-header" >
+
+            <button  class="navbar-toggler navbar-toggler-left" id="button-nav" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="front-side">
+                <a class="navbar-brand" id="logo" href="#">
+                    <span id="text-logo"><img src="upload/logolg.png" height="50" width="50"/> Penguin</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Khóa học</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tài liệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary">Tải ứng dụng  <i class="fa fa-angle-double-down dl-icon"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid login-laguage">
+            <div class="row ">
+                <div class="col-4">
+                    <div class="icon-nav">
+                        <a class="navbar-brand icon-log"  href="#"><i class="fa fa-user fa-lg" ></i></a>
+
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="lang-changer-wrapper dropdown-toggle" data-toggle="dropdown">
+                        <span class="flag flag-en"><img class="img-thumbnail rounded-circle icon-lang" src="upload/english.jpg" width="40"  height="40" alt="english"/></span>
+                        <span class="header-dropdown-arrow"></span>
+                    </div>
+                    <ul class="dropdown-menu dropdown-menu-change  text-center">
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="de">Deutsch</a>
+                        </li>
+
+                        <li class="active">
+                            <a tabindex="-1" href="#" data-lang="en">English</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="es">Español</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="pl">Język polski</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="pt-br">Português Brasileiro</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="vi">Tiếng Việt</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="zh-cn">中文（简体）</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="da">Dansk</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="fr">Français</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="ja">日本語</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="ko">한국어</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="ru">Русский</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="zh-hant">中文（繁體）</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="it">Italian</a>
+                        </li>
+
+                        <li class="">
+                            <a tabindex="-1" href="#" data-lang="tr">Türkçe</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Thanh menu-->
+        <header id="video-header">
+            <video id="background-video" class="embed-responsive embed-responsive-4by3" autoplay muted loop="loop">
+                <source src="upload/videobackground.mp4" type="video/mp4" id="source-video"/>
+            </video>
+            <svg id="svg-header" >
+                <defs>
+                    <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%"   stop-color="#00008B" stop-opacity="0.6"/>
+                        <stop offset="50%"  stop-color="#FF00FF" stop-opacity="0.1"/>
+                        <stop offset="100%" stop-color="#8B008B" stop-opacity="0.3"/>
+
+                    </linearGradient>
+                </defs>
+
+                <rect id="rect-video" x="0" width="100%" height="" y="0" fill="url(#linear)" />
+            </svg>
+            <div class="bg-search">
+                <div class="row">
+                    <div class="col desktop">
+                        <h1>Hãy cùng PENGUIN chinh phục ngôn ngữ bản xứ</h1>
+                    </div>
+                </div>
+                <div class="row desktop">
+                    <div class="col">
+                        <h2>Ngôn ngữ bạn muốn học...</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="upload/english.jpg" height="25" width="25" alt="English"/>
+                                <span id="select-language">Tiếng Anh</span>
+
+                            </button>
+                            <ul class="dropdown-menu list-unstyled list-languages" aria-labelledby="dropdownMenuButton">
+                                <li></li>
+                                <li>
+                                    <div class="row">
+                                        <ul class="col-md-6 list-unstyled">
+                                            <li><a href="#">
+                                                <img src="upload/english.jpg" height="25" width="25" alt="English"/>
+                                                <span>Tiếng Anh</span>
+                                            </a></li>
+                                            <li><a href="#">
+                                                <img src="upload/english.jpg" height="25" width="25" alt="English"/>
+                                                <span>Tiếng Hàn</span>
+                                            </a></li>
+                                        </ul>
+                                        <ul class="col-md-6 list-unstyled">
+                                            <li><a href="#">
+                                                <img src="upload/english.jpg" height="25" width="25" alt="English"/>
+                                                <span>Tiếng Hoa</span>
+                                            </a></li>
+                                            <li><a href="#">
+                                                <img src="upload/english.jpg" height="25" width="25" alt="English"/>
+                                                <span>Tiếng nhật</span>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-2 ">
+                    <div class="col">
+                        <form class="navbar-form" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="input-search" name="q">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-warning" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row row-message mobile">
+                    <div class="col">
+                        <span class="icon-note"><i class="fa fa-book"></i></span>
+                        <span>
+                                Nội dung học cập nhật mới liên tục theo yêu cầu của người học.</span>
+                    </div>
+                    <div class="col">
+                        <span class="icon-note"><i class="fa fa-thumbs-up"></i></span>
+                        <span>
+                                Các khóa học chúng tôi đã chọn lọc để phụ hợp nhất với người học.
+                            </span>
+                    </div>
+                    <div class="col">
+                        <span class="icon-note"><i class="fa fa-heart"></i></span>
+                        <span>
+                                Cùng nhau chung tay xây dựng trang học ngoại ngữ miễn phí.
+                            </span>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <section class="slider-header">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row row-box-post">
+                                <div class="col-4 col-box">
+                                    <div class="row row-img">
+                                        <div class="col col-img">
+                                            <img src="upload/3.jpg" class="img-responsive" height="200"/>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="col-text">
+                                                <span class="title-text"><strong>LỘ TRÌNH HỌC</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-detail">
+                                        <button >Xem chi tiết</button>
+                                    </div>
+
+                                </div>
+                                <div class="col-4 col-box">
+                                    <div class="row row-img">
+                                        <div class="col col-img">
+                                            <img src="upload/3.jpg" class="img-responsive" height="200" />
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="col-text">
+                                                <span class="title-text"><strong>LỘ TRÌNH HỌC</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-detail">
+                                        <button >Xem chi tiết</button>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row row-img">
+                                        <div class="col col-img">
+                                            <img src="upload/2.jpg" height="201"/>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="col-text">
+                                                <span class="title-text"><strong>LỘ TRÌNH HỌC</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="view-detail">
+                                            <button >Xem chi tiết</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row row-box-post">
+                                <div class="col-4 col-box">
+                                    <div class="row row-img">
+                                        <div class="col col-img">
+                                            <img src="upload/3.jpg" class="img-responsive" height="200"/>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="col-text">
+                                                <span class="title-text"><strong>LỘ TRÌNH HỌC</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-detail">
+                                        <button >Xem chi tiết</button>
+                                    </div>
+
+                                </div>
+                                <div class="col-4 col-box">
+                                    <div class="row row-img">
+                                        <div class="col col-img">
+                                            <img src="upload/3.jpg" class="img-responsive" height="200" />
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="col-text">
+                                                <span class="title-text"><strong>LỘ TRÌNH HỌC</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-detail">
+                                        <button >Xem chi tiết</button>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row row-img">
+                                        <div class="col col-img">
+                                            <img src="upload/2.jpg" height="201"/>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="col-text">
+                                                <span class="title-text"><strong>LỘ TRÌNH HỌC</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="view-detail">
+                                            <button >Xem chi tiết</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="container">
+                            <div class="row row-box-post">
+                                <div class="col-4 col-box">
+                                    <div class="row row-img">
+                                        <div class="col col-img">
+                                            <img src="upload/3.jpg" class="img-responsive" height="200"/>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="col-text">
+                                                <span class="title-text"><strong>LỘ TRÌNH HỌC</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-detail">
+                                        <button >Xem chi tiết</button>
+                                    </div>
+
+                                </div>
+                                <div class="col-4 col-box">
+                                    <div class="row row-img">
+                                        <div class="col col-img">
+                                            <img src="upload/3.jpg" class="img-responsive" height="200" />
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="col-text">
+                                                <span class="title-text"><strong>LỘ TRÌNH HỌC</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view-detail">
+                                        <button >Xem chi tiết</button>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row row-img">
+                                        <div class="col col-img">
+                                            <img src="upload/2.jpg" height="201"/>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="col-text">
+                                                <span class="title-text"><strong>LỘ TRÌNH HỌC</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="view-detail">
+                                            <button >Xem chi tiết</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon prev-header" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon next-header" aria-hidden="true"></span>
+                    <span class="sr-only" style="color: #2b542c">Next</span>
+                </a>
+            </div>
+        </section>
+        <section class="mb-5" id="s-header">
+            <article class="ar-imgHeader">
+                <img src="upload/header_banner.jpg" alt="header-banner" class="img-responsive" height="700" id="img-header"/>
+            </article>
+            <article class="ar-textReview">
+                <div class="h-title">
+                    <h3>BẠN NÊN CHỌN HỌC TẠI PENGUIN VÌ:</h3>
+                </div>
+                <div class="media media-hover  ">
+
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                         width="50px" height="50px" viewBox="0 0 2000.000000 2000.000000"
+                         preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,2000.000000) scale(0.100000,-0.100000)"
+                           fill="yellow" >
+                            <path d="M12366 16720 c-57 -23 -119 -79 -147 -132 -33 -64 -601 -1349 -626
+                    -1416 -25 -67 -29 -125 -13 -182 16 -58 67 -128 114 -158 24 -16 372 -172 773
+                    -347 712 -312 729 -319 793 -319 114 0 198 53 249 156 52 104 38 221 -37 309
+                    -43 50 -59 58 -635 310 l-399 174 64 28 c435 195 918 218 1372 66 684 -228
+                    1175 -802 1296 -1514 15 -85 24 -199 29 -330 8 -226 14 -248 86 -321 50 -50
+                    117 -74 199 -73 115 1 197 52 244 151 38 79 47 188 32 402 -24 359 -109 674
+                    -263 981 -377 753 -1108 1263 -1953 1361 -180 21 -476 14 -650 -15 -121 -21
+                    -314 -67 -391 -95 -51 -18 -65 -60 108 324 l133 295 0 80 c1 87 -19 141 -72
+                    198 -71 76 -209 106 -306 67z"/>
+                            <path d="M6162 15706 c-479 -155 -484 -157 -523 -241 -21 -44 -24 -110 -9
+                    -151 6 -14 57 -97 114 -183 110 -166 236 -378 330 -553 l58 -108 -1554 0
+                    -1554 0 -44 -22 c-26 -14 -57 -41 -75 -66 l-30 -44 -3 -446 c-2 -390 -1 -452
+                    13 -489 17 -44 68 -96 114 -116 19 -9 248 -13 856 -17 l829 -5 -99 -39 c-118
+                    -46 -158 -73 -185 -126 -37 -73 -29 -128 49 -322 420 -1052 912 -1900 1479
+                    -2552 l61 -70 -62 -45 c-96 -69 -359 -240 -492 -318 -637 -375 -1425 -720
+                    -2301 -1008 -105 -35 -204 -70 -220 -78 -99 -51 -132 -173 -76 -278 66 -125
+                    446 -717 481 -751 37 -35 91 -58 138 -58 13 0 116 29 230 64 1131 350 2168
+                    863 3046 1505 87 64 167 122 177 129 16 11 35 1 166 -96 853 -624 1907 -1178
+                    3069 -1612 121 -46 146 -52 196 -48 39 3 69 12 93 29 25 17 111 134 287 393
+                    138 203 257 384 265 402 31 74 7 175 -54 226 -17 14 -62 38 -99 52 -37 14
+                    -183 69 -323 122 -930 352 -1761 761 -2370 1167 -104 70 -255 176 -288 203 -2
+                    1 33 46 78 99 570 679 1073 1634 1461 2775 l81 239 662 3 c660 3 661 3 702 25
+                    51 27 90 72 104 121 8 25 10 181 8 479 l-3 441 -30 43 c-16 23 -50 53 -74 66
+                    l-44 23 -1656 0 -1656 0 -54 128 c-123 286 -395 803 -584 1109 -50 80 -64 95
+                    -109 117 -32 16 -68 26 -92 25 -23 0 -235 -63 -484 -143z m1963 -2558 c-126
+                    -357 -230 -607 -379 -913 -187 -384 -360 -672 -565 -944 -101 -134 -258 -321
+                    -269 -321 -12 0 -91 85 -182 194 -399 480 -770 1135 -1081 1913 -39 98 -73
+                    181 -76 186 -2 4 581 7 1296 7 l1300 0 -44 -122z"/>
+                            <path d="M12786 11505 c-51 -18 -100 -67 -124 -124 -17 -39 -890 -2351 -2226
+                    -5898 -231 -613 -306 -822 -306 -855 1 -95 69 -178 163 -198 37 -7 236 -10
+                    643 -8 l589 3 47 27 c25 15 56 43 67 61 16 26 249 696 543 1560 l30 87 1195
+                    -2 1194 -3 290 -804 c159 -442 298 -818 310 -837 11 -19 42 -47 67 -62 l47
+                    -27 589 -3 c391 -2 607 1 641 8 94 20 164 103 165 197 0 32 -310 869 -1265
+                    3420 -1247 3332 -1265 3378 -1304 3414 -24 21 -60 41 -85 48 -71 18 -1219 14
+                    -1270 -4z m994 -2986 c206 -584 376 -1067 378 -1075 3 -12 -113 -14 -758 -14
+                    -431 0 -760 4 -758 9 2 5 171 488 377 1075 206 586 377 1066 380 1066 3 0 175
+                    -478 381 -1061z"/>
+
+                        </g>
+                    </svg>
+
+                    <div class="media-body">
+                        <strong class="mt-0">Mọi thứ đã sẵn sàng cho bạn</strong>
+                        <p class="p-text">Đi từ 'zero' lên 'hero' ngôn ngữ với hơn 200 khoá học đầy nội dung thú vị, được viết bởi các chuyên gia ngôn ngữ.</p>
+                    </div>
+                </div>
+                <div class="media media-hover">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                         width="50px" height="50px" viewBox="0 0 675.000000 675.000000"
+                         preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                            Created by potrace 1.10, written by Peter Selinger 2001-2011
+                        </metadata>
+                        <g transform="translate(0.000000,675.000000) scale(0.100000,-0.100000)"
+                           fill="yellow" stroke="none">
+
+                            <path d="M3433 5990 c-4 -15 -14 -20 -42 -20 -93 0 -151 -41 -228 -160 l-35
+-55 12 -110 c7 -61 10 -128 6 -150 -17 -98 -17 -117 -7 -146 9 -26 8 -36 -4
+-49 -23 -25 -19 -41 9 -34 27 6 46 -13 22 -22 -10 -4 -16 -18 -16 -40 0 -23
+-6 -37 -20 -44 -26 -14 -25 -26 3 -34 14 -3 26 0 33 9 9 12 19 5 60 -40 45
+-49 55 -55 108 -63 56 -9 106 -3 131 16 6 4 18 19 28 35 21 33 47 36 47 5 l0
+-22 22 22 c22 21 22 22 3 36 -18 13 -18 17 -7 50 8 20 11 49 7 64 -4 20 0 35
+15 52 16 18 19 31 14 54 -4 17 -7 117 -6 221 0 110 -4 203 -11 221 -8 24 -7
+40 3 64 16 39 -1 65 -20 30 -12 -23 -13 -22 -56 25 -36 40 -42 53 -37 76 4 23
+2 29 -12 29 -9 0 -19 -9 -22 -20z m30 -132 l37 -41 0 -313 c0 -296 -1 -315
+-20 -347 -12 -20 -37 -42 -61 -52 -38 -18 -42 -18 -94 -1 -42 13 -58 24 -75
+53 -21 36 -22 46 -20 352 l1 316 36 37 c26 26 47 38 72 41 61 6 84 -3 124 -45z"/>
+
+                            <path d="M4407 5665 c4 -11 0 -22 -10 -30 -96 -70 -160 -137 -167 -173 -4 -20
+-12 -28 -33 -30 -26 -3 -37 -25 -17 -37 23 -14 -2 -89 -47 -134 -92 -94 -133
+-228 -101 -333 10 -34 15 -39 35 -33 13 3 23 1 23 -5 0 -5 -4 -10 -10 -10 -23
+0 -8 -29 22 -41 18 -7 41 -22 51 -32 29 -29 119 -20 172 16 22 15 48 27 57 27
+10 0 18 7 18 15 0 9 11 27 24 40 29 29 66 88 66 105 0 7 8 19 18 27 12 10 14
+16 5 19 -15 6 -18 34 -4 34 5 0 11 12 13 28 2 21 8 27 26 26 12 0 22 4 22 10
+0 6 16 33 35 60 22 32 35 61 35 82 0 17 7 37 15 44 8 7 15 16 15 21 0 4 5 20
+12 36 l12 28 5 -45 c3 -25 11 -45 16 -45 14 0 19 74 6 89 -6 7 -16 37 -22 67
+-7 31 -20 60 -30 67 -11 7 -19 19 -19 27 0 20 -27 44 -58 51 -15 4 -33 12 -41
+17 -7 6 -32 12 -55 12 -22 0 -53 5 -69 9 -23 7 -26 6 -20 -9z m171 -96 c64
+-56 70 -121 17 -198 -19 -28 -35 -53 -35 -57 0 -3 -16 -29 -35 -58 -19 -29
+-35 -58 -35 -64 0 -6 -4 -12 -8 -14 -5 -1 -16 -16 -25 -33 -8 -16 -27 -52 -42
+-80 -99 -188 -105 -195 -198 -195 -52 0 -61 3 -87 31 -48 53 -48 123 1 197 16
+24 29 49 29 56 0 8 7 19 15 26 8 7 15 18 15 25 0 7 6 18 14 24 8 6 28 40 45
+74 18 34 43 80 56 102 13 22 33 59 46 83 23 47 62 92 94 111 33 19 91 6 133
+-30z"/>
+                            <path d="M2092 5611 c-34 -40 -46 -61 -43 -80 3 -26 3 -26 -17 -8 -28 25 -41
+15 -33 -25 5 -24 13 -34 29 -36 30 -4 31 -56 2 -72 -30 -16 -26 -50 6 -50 20
+0 30 -9 50 -52 41 -86 67 -132 81 -146 7 -7 13 -24 13 -37 0 -28 19 -43 31
+-24 4 7 11 10 15 6 4 -3 1 -13 -6 -22 -17 -20 -6 -45 18 -38 15 3 22 -3 30
+-25 6 -17 19 -35 29 -40 10 -6 27 -28 37 -49 29 -56 89 -111 130 -118 53 -10
+144 21 184 65 76 80 82 159 22 284 -23 50 -58 103 -85 131 -43 43 -45 48 -31
+64 25 27 20 51 -9 51 -20 0 -25 5 -25 26 0 17 -6 28 -20 31 -14 4 -20 14 -20
+34 0 19 -5 29 -15 29 -8 0 -15 8 -15 18 0 25 -37 58 -61 54 -13 -2 -19 3 -19
+16 0 10 -12 29 -26 43 -23 21 -35 24 -115 24 l-90 1 -47 -55z m230 -48 c20
+-21 46 -58 59 -83 12 -25 32 -58 43 -75 12 -16 31 -50 43 -75 13 -25 32 -58
+43 -75 10 -16 31 -52 46 -80 37 -72 48 -91 62 -107 6 -8 12 -40 13 -72 2 -52
+-1 -60 -30 -89 -29 -29 -37 -32 -97 -32 -63 0 -68 2 -95 34 -16 19 -36 48 -44
+65 -57 109 -74 139 -82 145 -4 3 -18 26 -31 51 -33 64 -84 154 -91 160 -12 10
+-48 85 -55 113 -9 36 3 97 18 97 6 0 22 14 36 30 22 26 31 30 75 30 46 0 55
+-4 87 -37z"/>
+                            <path d="M1355 4843 c-11 -3 -35 -21 -55 -39 -19 -19 -38 -34 -42 -34 -4 0
+-17 -18 -28 -40 -11 -22 -25 -40 -30 -40 -16 0 -12 -50 5 -56 9 -4 12 -15 9
+-33 -8 -36 21 -82 74 -121 37 -27 40 -32 35 -63 -7 -43 9 -55 37 -27 25 25 37
+25 52 0 7 -11 23 -20 35 -20 14 0 23 -6 23 -15 0 -8 30 -30 68 -49 149 -76
+172 -90 172 -113 0 -18 7 -22 50 -25 27 -1 64 1 82 5 34 9 51 10 102 5 23 -3
+32 3 47 32 10 19 30 40 43 47 25 13 39 40 34 64 -2 7 8 15 22 19 14 3 25 11
+24 18 -2 28 -5 32 -18 32 -8 0 -18 10 -22 23 -8 25 -61 100 -96 134 -15 16
+-29 21 -45 17 -25 -7 -30 5 -11 24 8 8 5 14 -15 21 -15 6 -27 16 -27 23 -1 32
+-17 42 -49 29 -27 -12 -33 -11 -57 8 -15 12 -32 21 -39 21 -15 0 -25 22 -25
+52 0 18 -4 20 -32 14 -25 -5 -50 3 -122 38 -87 42 -158 60 -201 49z m85 -76
+c19 -7 53 -24 75 -38 57 -35 72 -44 150 -85 39 -20 72 -40 75 -44 3 -4 21 -15
+40 -24 63 -28 124 -65 132 -81 5 -8 17 -15 27 -15 10 0 28 -12 42 -26 20 -21
+24 -35 22 -79 -3 -98 -42 -135 -138 -135 -31 0 -53 8 -91 35 -27 19 -53 35
+-58 35 -5 0 -41 20 -80 44 -39 23 -78 46 -86 49 -8 4 -24 13 -35 19 -44 29
+-102 63 -133 79 -77 40 -99 65 -105 120 -10 81 28 135 108 152 11 3 20 5 20 6
+0 0 16 -5 35 -12z m345 -568 c10 -14 1 -21 -19 -13 -9 3 -13 10 -10 15 7 12
+21 11 29 -2z"/>
+                            <path d="M5290 4843 c-8 -3 -21 -13 -28 -22 -10 -13 -14 -13 -21 -2 -11 16
+-84 6 -105 -15 -8 -8 -26 -14 -40 -14 -32 0 -42 -17 -16 -25 12 -4 19 -12 17
+-18 -5 -17 -38 -21 -48 -6 -4 7 -11 10 -16 6 -4 -5 -1 -12 7 -17 8 -5 12 -10
+10 -12 -74 -47 -162 -88 -192 -88 -21 0 -31 -6 -38 -25 -7 -17 -17 -25 -34
+-25 -16 0 -27 -7 -31 -20 -3 -11 -10 -20 -15 -20 -5 0 -19 -18 -31 -40 -13
+-22 -30 -40 -40 -40 -17 0 -35 -43 -24 -60 3 -5 0 -20 -6 -34 -11 -23 -8 -32
+27 -82 21 -31 56 -68 77 -82 20 -13 37 -29 37 -33 0 -14 34 -10 56 6 25 19 46
+19 84 -2 31 -18 32 -18 47 5 10 14 26 22 44 22 19 0 29 5 29 14 0 20 39 46 68
+46 36 0 103 39 150 87 43 44 44 45 94 38 36 -5 49 -4 44 4 -4 6 -16 11 -28 11
+-19 0 -19 2 -6 23 8 12 28 27 44 33 60 21 94 48 94 74 0 14 7 34 15 44 15 20
+18 91 6 136 -4 14 -19 31 -35 38 -24 12 -26 18 -20 44 5 25 3 30 -9 25 -8 -3
+-32 3 -53 14 -37 18 -83 23 -114 12z m87 -80 c59 -9 98 -114 66 -180 -17 -36
+-59 -66 -207 -149 -48 -27 -106 -59 -129 -71 -22 -13 -46 -23 -54 -23 -7 0
+-16 -7 -19 -15 -3 -8 -31 -29 -62 -46 -48 -27 -67 -32 -120 -31 -46 1 -70 6
+-92 22 -29 21 -30 24 -30 100 0 87 0 86 100 138 60 31 126 69 175 100 22 14
+58 36 80 48 64 34 89 48 105 61 38 29 116 63 135 57 11 -3 34 -8 52 -11z"/>
+                            <path d="M3203 4833 c-18 -3 -33 -8 -33 -13 0 -14 -79 -50 -86 -39 -3 5 0 9 5
+9 6 0 11 7 11 15 0 19 -9 19 -34 0 -11 -8 -34 -15 -51 -15 -20 0 -43 -11 -65
+-30 -36 -30 -68 -38 -87 -19 -7 7 -17 0 -33 -25 -12 -20 -29 -36 -39 -36 -21
+0 -135 -86 -139 -106 -2 -8 -8 -14 -12 -14 -5 0 -33 -22 -62 -50 -29 -27 -56
+-50 -60 -50 -15 0 -8 21 8 27 25 9 74 61 74 77 0 31 -19 23 -77 -32 -61 -58
+-79 -91 -55 -99 6 -3 12 0 12 6 0 6 5 11 10 11 6 0 3 -12 -7 -26 -15 -24 -18
+-25 -29 -9 -8 11 -20 15 -30 11 -13 -5 -15 -14 -10 -41 6 -31 4 -36 -19 -45
+-17 -7 -25 -17 -25 -34 0 -41 -18 -76 -44 -86 -21 -8 -26 -18 -32 -59 -4 -28
+-13 -56 -20 -62 -8 -6 -14 -18 -14 -26 0 -10 -6 -12 -22 -8 -21 7 -21 6 -15
+-64 3 -39 2 -73 -3 -76 -4 -3 -10 1 -13 7 -2 7 -8 10 -12 5 -5 -4 -3 -18 4
+-31 10 -18 11 -33 3 -57 -6 -19 -13 -65 -17 -104 -3 -38 -8 -80 -11 -91 -4
+-15 0 -23 14 -26 27 -8 39 -96 17 -137 -27 -53 -16 -142 20 -161 25 -13 55
+-69 55 -103 0 -12 7 -31 15 -41 8 -11 15 -28 15 -38 0 -30 63 -146 82 -151 12
+-3 18 -14 18 -31 0 -14 9 -34 20 -43 11 -10 20 -23 20 -29 0 -7 11 -32 25 -55
+14 -24 25 -52 25 -61 0 -9 9 -23 21 -31 17 -12 19 -21 14 -50 -5 -26 -3 -37 9
+-44 23 -13 86 -143 86 -179 0 -34 15 -54 41 -54 27 0 30 -14 14 -60 -8 -23
+-15 -61 -15 -83 l0 -41 27 41 c15 23 30 40 33 38 4 -3 5 -47 2 -100 -4 -86 -3
+-95 14 -102 35 -13 44 -36 42 -108 0 -38 4 -89 9 -112 13 -52 57 -113 84 -113
+24 0 27 -45 3 -54 -10 -4 -13 -13 -10 -24 4 -12 -2 -26 -15 -38 -40 -36 -47
+-65 -54 -239 -5 -139 -4 -182 9 -238 21 -84 34 -116 63 -144 26 -25 31 -63 8
+-63 -8 0 -15 -7 -15 -15 0 -10 10 -15 29 -15 32 0 102 -52 136 -102 16 -23 26
+-28 50 -25 38 6 76 -8 70 -25 -2 -7 12 -23 32 -36 32 -20 43 -22 102 -16 65 7
+98 7 196 2 45 -3 50 -1 53 20 2 14 10 22 22 22 11 0 24 9 30 20 6 11 18 20 27
+20 8 0 33 18 54 39 21 22 52 47 68 56 28 14 31 14 31 0 0 -8 5 -15 10 -15 6 0
+10 18 10 39 0 22 4 43 10 46 5 3 20 27 33 53 45 91 52 135 52 342 0 181 -2
+198 -22 237 -34 64 -47 86 -60 101 -20 21 -16 52 6 52 25 0 70 61 88 119 7 25
+16 91 18 146 5 132 19 168 41 108 9 -24 12 -16 19 60 4 48 11 90 16 92 4 3 15
+-7 24 -22 l16 -28 -6 40 c-2 22 -8 59 -11 82 -6 41 -5 43 19 43 25 0 37 16 37
+49 0 26 69 163 97 193 20 21 24 32 18 57 -6 27 -4 31 14 31 14 0 25 12 36 38
+38 86 57 122 64 122 4 0 14 15 23 33 8 17 32 65 52 105 21 42 34 82 31 92 -8
+24 11 70 30 70 9 0 15 9 15 23 0 12 9 28 20 35 21 13 27 56 10 67 -17 10 -11
+37 16 72 28 36 33 63 20 101 -5 16 -4 22 6 20 10 -2 13 13 13 62 0 36 4 89 9
+118 6 41 4 63 -10 102 -10 28 -22 50 -27 50 -6 0 -7 21 -4 48 5 47 -8 120 -30
+156 -8 15 -8 25 1 39 9 15 8 21 -3 25 -18 6 -51 40 -51 52 0 6 7 10 15 10 8 0
+15 7 15 15 0 18 -12 19 -27 4 -20 -20 -31 0 -26 45 5 42 4 45 -21 52 -16 4
+-28 15 -32 30 -6 25 -19 31 -29 14 -11 -17 -21 -11 -38 25 -15 32 -9 54 12 41
+7 -5 23 54 17 61 -6 7 -56 -24 -56 -34 0 -25 -26 -12 -54 29 -20 27 -26 43
+-18 46 20 6 14 32 -8 32 -10 0 -23 6 -27 13 -13 19 -51 37 -67 31 -12 -4 -43
+9 -75 33 -3 2 4 9 14 17 26 19 13 46 -23 46 -16 0 -36 7 -43 16 -10 13 -24 15
+-64 10 -48 -7 -49 -6 -27 9 27 20 28 35 2 35 -11 0 -29 5 -40 12 -15 10 -22 9
+-39 -6 -23 -21 -71 -15 -71 8 0 25 -29 38 -92 41 -35 2 -85 8 -113 13 -48 10
+-236 12 -302 5z m272 -88 c33 -8 81 -15 106 -15 25 0 54 -7 65 -15 10 -8 29
+-15 41 -15 12 0 39 -7 60 -16 94 -40 109 -47 123 -55 8 -5 35 -19 60 -32 24
+-12 51 -28 60 -35 201 -165 279 -254 353 -402 46 -95 76 -179 87 -250 5 -30
+14 -73 19 -95 15 -59 13 -203 -4 -250 -8 -22 -14 -58 -15 -81 0 -43 -21 -127
+-46 -181 -16 -36 -32 -75 -60 -143 -10 -25 -29 -63 -41 -85 -12 -22 -34 -62
+-48 -90 -14 -27 -42 -77 -60 -110 -19 -33 -46 -84 -60 -112 -15 -29 -30 -55
+-36 -58 -5 -4 -9 -15 -9 -26 0 -10 -4 -19 -8 -19 -9 0 -82 -135 -82 -151 0 -5
+-11 -32 -25 -61 -14 -28 -25 -57 -25 -62 -1 -6 -9 -29 -20 -51 -11 -22 -19
+-49 -20 -61 0 -11 -5 -25 -11 -31 -17 -17 -41 -129 -46 -213 -3 -41 -9 -79
+-14 -84 -5 -6 -9 -26 -9 -45 0 -20 -3 -46 -6 -59 l-6 -22 -462 2 -461 3 -3
+116 c-1 72 -8 133 -17 159 -8 23 -15 59 -15 79 0 20 -6 45 -14 56 -7 11 -16
+34 -18 50 -6 32 -22 79 -44 133 -8 17 -20 47 -27 65 -30 72 -83 172 -94 180
+-7 4 -13 15 -13 24 0 18 -29 79 -61 128 -10 17 -22 37 -25 45 -23 54 -47 101
+-55 106 -5 3 -9 12 -9 21 0 9 -6 24 -13 32 -7 9 -22 36 -32 61 -10 25 -24 50
+-30 55 -7 6 -14 21 -18 35 -8 35 -35 112 -47 132 -6 10 -10 28 -10 40 0 13 -7
+32 -15 42 -8 11 -15 41 -15 68 0 26 -7 66 -16 88 -13 32 -15 66 -12 168 3 70
+10 137 16 149 7 12 12 42 12 67 0 25 4 47 9 50 5 3 12 18 16 33 13 52 84 200
+134 279 44 69 203 222 296 283 42 28 80 51 85 51 5 0 30 11 56 25 26 14 53 25
+60 25 7 0 25 6 41 14 63 32 112 45 189 51 44 4 96 10 115 15 52 12 108 11 174
+-5z m-124 -3104 c222 0 415 1 428 2 l25 2 -3 -233 c-2 -176 -6 -240 -17 -260
+-8 -15 -14 -32 -14 -39 0 -22 -41 -91 -73 -126 -62 -64 -158 -127 -197 -127
+-9 0 -25 -7 -36 -15 -27 -20 -201 -21 -241 0 -15 7 -50 22 -76 32 -92 34 -174
+121 -227 239 -19 44 -22 70 -24 244 -2 107 -7 207 -11 222 -10 38 11 71 39 64
+12 -3 204 -5 427 -5z"/>
+
+
+                            <path d="M5515 3751 c-12 -11 -273 -16 -331 -6 -31 6 -50 2 -82 -14 -23 -12
+-54 -21 -69 -21 -37 0 -158 -123 -147 -149 4 -9 8 -44 8 -77 1 -55 5 -67 34
+-103 18 -22 54 -53 80 -68 l47 -28 285 0 c157 0 303 4 324 8 28 6 53 23 88 59
+64 66 78 96 78 161 0 67 -33 122 -103 168 -43 28 -57 32 -130 34 -48 2 -83 8
+-85 14 -2 6 6 11 17 11 12 0 21 5 21 10 0 13 -23 13 -35 1z m172 -120 c45 -18
+63 -51 65 -119 1 -51 -2 -63 -28 -95 l-29 -37 -341 0 -341 0 -27 39 c-51 73
+-43 139 26 201 l30 28 307 -3 c212 -1 316 -6 338 -14z"/>
+                            <path d="M1173 3735 c1 -5 -18 -11 -43 -12 -25 -2 -69 -8 -97 -14 -41 -8 -53
+-15 -53 -29 0 -11 -6 -23 -14 -27 -8 -4 -26 -25 -40 -46 -34 -50 -36 -134 -5
+-178 11 -16 27 -29 35 -29 10 0 14 -8 12 -21 -2 -17 8 -28 47 -50 50 -28 54
+-28 294 -39 304 -13 380 -5 444 47 16 13 33 23 39 23 6 0 8 7 4 15 -3 9 7 27
+24 45 34 35 34 34 20 61 -7 13 -7 19 0 19 5 0 10 -4 10 -10 0 -16 17 -11 24 7
+4 10 1 20 -9 25 -16 10 -21 68 -5 68 6 0 10 7 10 15 0 8 -4 15 -10 15 -5 0
+-10 -4 -10 -10 0 -18 -28 -10 -33 9 -2 11 -23 29 -45 40 -29 15 -41 28 -45 51
+-7 32 -32 41 -54 19 -9 -9 -33 -8 -94 1 -101 16 -408 20 -406 5z m497 -100 c7
+-8 23 -15 35 -15 25 0 58 -44 70 -93 8 -30 -7 -76 -39 -119 l-20 -28 -335 0
+-335 0 -33 32 c-31 30 -33 36 -33 100 0 37 4 68 8 68 5 0 13 10 19 22 16 37
+83 46 379 47 230 1 273 -1 284 -14z"/>
+
+                            <path d="M4823 2867 c-4 -7 -21 -17 -38 -22 -16 -6 -39 -25 -50 -42 -11 -18
+-28 -32 -37 -33 -25 0 -40 -35 -32 -75 4 -23 2 -35 -5 -35 -6 0 -11 -8 -11
+-19 0 -10 -7 -24 -15 -31 -8 -7 -15 -17 -15 -23 0 -7 4 -7 12 1 18 18 26 15
+45 -21 39 -73 58 -96 85 -101 15 -3 28 -12 28 -20 0 -21 18 -30 34 -17 16 14
+29 2 16 -14 -14 -17 2 -29 72 -55 36 -13 65 -32 78 -50 12 -16 27 -27 34 -24
+26 10 93 -15 99 -36 3 -12 14 -20 26 -20 12 0 21 -6 21 -13 0 -12 39 -29 110
+-47 43 -11 80 -3 80 17 0 12 7 14 28 9 72 -18 82 -19 82 -2 0 10 -8 16 -22 16
+l-22 0 22 23 c22 21 24 21 36 5 17 -24 26 -13 26 33 0 21 5 41 10 44 6 3 10
+33 10 66 0 51 -2 59 -19 59 -26 0 -35 29 -16 50 15 17 21 50 8 50 -3 0 -15 -8
+-25 -17 -20 -18 -31 -12 -52 29 -7 14 -19 22 -30 20 -10 -2 -26 5 -37 16 -10
+11 -24 22 -31 24 -11 4 -11 8 0 20 17 21 -3 35 -25 17 -13 -11 -17 -10 -28 5
+-9 11 -20 16 -33 12 -11 -4 -24 0 -31 8 -15 18 1 30 29 21 11 -4 20 -2 20 4 0
+6 -4 11 -10 11 -5 0 -19 9 -30 20 -16 16 -24 18 -51 8 -26 -9 -39 -7 -80 13
+-46 21 -62 48 -25 41 21 -4 21 21 0 39 -13 11 -17 10 -25 -4 -12 -21 -42 -22
+-59 -2 -7 8 -22 15 -34 15 -11 0 -32 9 -46 20 -29 22 -65 26 -77 7z m127 -118
+c19 -16 40 -29 46 -29 7 0 43 -20 81 -45 37 -25 71 -45 75 -45 4 0 27 -13 51
+-30 25 -16 48 -30 52 -30 16 0 159 -92 175 -113 10 -12 21 -44 25 -71 9 -68
+-25 -116 -95 -139 -53 -17 -75 -15 -84 9 -3 8 -15 14 -26 14 -11 0 -20 4 -20
+9 0 5 -12 14 -27 20 -16 6 -41 20 -58 31 -16 11 -39 24 -50 30 -36 18 -60 35
+-68 48 -4 6 -18 12 -30 12 -13 0 -28 5 -34 11 -13 13 -37 27 -118 67 -33 17
+-73 44 -90 61 -25 27 -29 39 -29 85 0 47 4 59 36 98 l37 45 58 -5 c45 -4 66
+-11 93 -33z"/>
+                            <path d="M1812 2861 c-7 -4 -12 -14 -10 -21 2 -10 -14 -16 -57 -22 -77 -10
+-105 -25 -122 -65 -15 -36 -46 -44 -83 -21 -18 11 -23 9 -43 -14 -12 -15 -31
+-28 -42 -30 -15 -3 -20 -11 -20 -36 0 -20 -5 -32 -13 -32 -41 0 -137 -75 -198
+-155 -24 -31 -26 -41 -18 -64 7 -18 7 -34 0 -50 -8 -18 -7 -26 6 -35 9 -7 26
+-31 38 -54 12 -23 27 -42 34 -42 6 0 27 -11 46 -24 19 -13 50 -27 68 -30 28
+-7 33 -4 41 16 8 21 10 21 16 5 6 -15 15 -17 54 -12 71 10 76 12 60 32 -10 12
+-11 17 -2 20 6 2 21 13 33 23 18 15 25 17 40 7 22 -13 39 -2 22 15 -8 8 -5 16
+13 29 13 11 28 19 33 19 5 0 15 7 22 15 16 19 35 19 55 -1 22 -22 47 -1 39 32
+-5 19 -1 24 20 30 14 3 33 3 41 0 9 -3 18 1 21 9 4 8 17 15 30 15 19 0 24 5
+24 25 0 24 2 24 46 18 34 -4 48 -2 55 8 16 25 10 36 -16 31 -15 -2 -25 0 -25
+7 0 26 40 88 64 99 32 14 36 52 5 52 -18 0 -20 4 -14 29 8 39 -19 94 -43 87
+-12 -4 -22 4 -34 24 -12 21 -29 32 -60 40 -24 6 -53 15 -66 20 -28 12 -43 12
+-60 1z m143 -105 c38 -32 43 -41 49 -92 6 -51 4 -61 -20 -96 -15 -21 -33 -38
+-40 -38 -14 0 -58 -24 -139 -75 -27 -17 -69 -39 -92 -49 -23 -10 -44 -25 -47
+-32 -3 -8 -12 -14 -20 -14 -8 0 -32 -12 -53 -26 -21 -14 -47 -30 -58 -35 -11
+-5 -44 -23 -73 -39 -49 -28 -55 -29 -85 -17 -80 34 -115 90 -101 164 9 45 48
+82 141 134 43 23 87 47 98 54 11 6 39 23 62 38 24 15 52 27 63 27 11 0 23 7
+26 15 4 8 27 24 52 35 26 12 57 30 69 42 21 19 65 35 107 37 10 1 38 -15 61
+-33z"/>
+
+                        </g>
+                    </svg>
+                    <div class="media-body">
+                        <strong class="mt-0">Công nghệ học siêu thông minh</strong>
+                        <p class="p-text">Từ tiếng địa phương cho đến kỹ năng giao tiếp và ngữ pháp, chúng tôi đã chuẩn bị đầy đủ cho bạn với 20,000 video của người bản ngữ và các chatbot.</p>
+                    </div>
+                </div>
+                <div class="media media-hover ">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                         width="50px" height="50px" viewBox="0 0 512.000000 512.000000"
+                         preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                           fill="yellow" stroke="none">
+
+                            <path d="M1281 3756 c-52 -29 -50 2 -51 -923 l0 -863 1045 0 1045 0 0 -346 0
+                    -346 29 -29 29 -29 337 0 337 0 29 29 29 29 0 656 c0 393 -4 665 -10 680 -14
+                    38 -59 56 -140 56 l-70 0 0 519 0 519 -29 31 -29 31 -1264 0 c-1029 -1 -1267
+                    -3 -1287 -14z m2429 -625 l0 -460 -166 -3 -166 -3 -29 -33 -29 -32 0 -230 0
+                    -230 -955 0 -955 0 0 725 0 725 1150 0 1150 0 0 -459z m340 -1186 l0 -505
+                    -335 0 -335 0 0 505 0 505 335 0 335 0 0 -505z"/>
+                            <path d="M2439 3325 c-63 -17 -134 -53 -176 -90 l-34 -30 53 -52 53 -52 44 30
+                    c129 86 295 71 405 -37 44 -44 85 -126 93 -184 l5 -39 -42 -3 c-24 -2 -45 -8
+                    -47 -14 -3 -10 152 -174 166 -174 15 0 173 169 167 179 -4 6 -27 11 -52 11
+                    l-44 0 0 39 c0 53 -40 168 -78 222 -65 94 -148 155 -256 188 -77 24 -184 27
+                    -257 6z"/>
+                            <path d="M2074 2978 c-52 -51 -84 -90 -80 -97 4 -6 27 -11 52 -11 l44 0 0 -39
+                    c0 -21 9 -67 20 -102 45 -148 156 -259 308 -310 54 -18 81 -21 167 -17 87 4
+                    111 9 166 35 36 16 82 45 103 63 l37 33 -52 53 -52 52 -40 -29 c-191 -139
+                    -471 -19 -503 215 l-7 46 47 0 c30 0 46 4 46 13 0 7 -38 50 -85 97 l-84 84
+                    -87 -86z"/>
+
+                        </g>
+                    </svg>
+
+                    <div class="media-body">
+                        <strong class="mt-0">Học bất cứ đâu, bất cứ lúc nào</strong>
+                        <p class="p-text">Một hành trình học tập thú vị bỏ vừa vào túi và dạy bạn những kỹ năng ngoại ngữ hữu dụng. Siêu năng lực bí ẩn của bạn, nay được mở khoá.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+
+                    <img src="upload/appCustom.png" height="267" width="713"/>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <div class="introduce-app">
+                                <span class="logan ">
+                                    PENGUIN luôn mong muốn đồng hành cùng bạn ở mọi nơi từ xe bus, công viên, bàn học và giường ngủ, PENGUIN là người bạn thân thiết của bạn.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 text-center">
+                        <div class="col">
+                            <button class="btn-lg btn-success">Tải app <i class="fa fa-angle-double-down"></i></button>
+                        </div>
+                        <div class="col">
+                            <button class="btn-lg btn-warning"> Bắt đầu học</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <section class="bg-route-header">
+        </section>
+        <section class="bg-route ">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="title-name">
+                            <span style="color: #FFFFFF; font-size: 3em">LỘ TRÌNH HỌC MỘT NGÔN NGỮ CÙNG PENGUIN TRONG <span style="color: yellow;font-weight: bold">THỜI GIAN NGẮN</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <section class="tree">
+                            <div class="line-tree"></div>
+                            <div class="wrapper-point wow slideInLeft" data-wow-duration="2s" >
+                                <div class="point1">
+                                    <span>1</span>
+                                </div>
+                                <div class="dashline"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="contain-point1">
+                                <span class="title-route">BẮT ĐẦU HỌC PHÁT ÂM</span>
+                                <blockquote><cite>"Đây là điều đầu tiên khi học một ngôn ngữ mới"</cite></blockquote>
+                                <p>Phát âm là vấn đề quan trọng và khó khăn nhất đối với người không phải là người bản ngữ phải đối mặt khi học ngôn ngữ không phải tiếng mẹ đẻ. Phát âm không đúng cách có thể dẫn đến rất nhiều tiêu cực, sự hiểu nhầm và truyền thông không hiệu quả.</p>
+                            </div>
+                            <!-- end point1-->
+                            <div class="wrapper-point wrapper-point2 wow slideInRight" data-wow-duration="4s" >
+                                <div class="point1 point2">
+                                    <span>2</span>
+                                </div>
+                                <div class="dashline dashline2 "></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="contain-point1 contain-point2">
+                                <span class="title-route">HỌC TỪ VỰNG</span>
+                                <blockquote><cite>“Không có ngữ pháp, rất ít thông tin có thể được truyền đạt. Nhưng không có từ vựng thì chẳng một thông tin nào có thể được truyền đạt cả”.</cite></blockquote>
+                                <p></p>
+                            </div>
+                            <!--end point2-->
+                            <div class="wrapper-point wrapper-point3 wow slideInLeft" data-wow-duration="6s">
+                                <div class="point1 point3">
+                                    <span>3</span>
+                                </div>
+                                <div class="dashline dashline3 "></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="contain-point1 contain-point3">
+                                <span class="title-route">HỌC NGỮ PHÁP</span>
+                                <blockquote><cite>“Trong ngôn ngữ học, ngữ pháp là tập hợp các quy tắc cấu trúc có ảnh hưởng đến thành phần của mệnh đề, cụm từ và từ trong bất kỳ ngôn ngữ nào. Đây là nghiên cứu có hệ thống và mô tả về một ngôn ngữ, và nó giúp chúng ta hiểu cách từ và các thành phần của chúng kết hợp thành các câu.”.</cite></blockquote>
+                                <p></p>
+                            </div>
+                            <!--end point3-->
+                            <div class="wrapper-point wrapper-point2 wrapper-point4 wow slideInRight" data-wow-duration="8s">
+                                <div class="point1 point2 point4">
+                                    <span>4</span>
+                                </div>
+                                <div class="dashline dashline2  "></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="contain-point1 contain-point2 contain-point4">
+                                <span class="title-route">VẬN DỤNG ĐỂ GIAO TIẾP</span>
+                                <blockquote><cite>“Học mà không thể sử dụng để giao tiếp đó là một thất bại tệ hại khi học một ngôn ngữ, tại chức năng của ngôn ngữ là để nói và lắng nghe và truyền tải thông điệp để người khác hiểu ý của mình”.</cite></blockquote>
+                                <p></p>
+                            </div>
+                            <!--end point2-->
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="s-member">
+            <span><strong>Cảm nhận của người sử dụng</strong></span>
+        </section>
+        <section class="feel-user mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="comment-users">
+                            <div class="feel1 wow slideInUp" data-wow-duration="2s">
+
+                                <div class="commend bg-faded">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus libero quas quisquam. Adipisci aperiam blanditiis
+                                        ex laboriosam praesentium quis quod, sunt. Cum, inventore maxime molestiae quod rem sed veniam veritatis.</p>
+
+                                </div>
+                                <img src="upload/user1.jpg" height="50" width="50" class="rounded-circle img-thumbnail img-user1"/>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col">
+                        <div class="comment-users1 ">
+                            <div class="feel1 wow slideInUp" data-wow-duration="5s">
+
+                                <div class="commend bg-faded">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus libero quas quisquam. Adipisci aperiam blanditiis
+                                        ex laboriosam praesentium quis quod, sunt. Cum, inventore maxime molestiae quod rem sed veniam veritatis.</p>
+
+                                </div>
+                                <img src="upload/user1.jpg" height="50" width="50" class="rounded-circle img-thumbnail img-user2"/>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col">
+                        <div class="comment-users2 ">
+                            <div class="feel1 wow slideInUp" data-wow-duration="10s">
+
+                                <div class="commend bg-faded ">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus libero quas quisquam. Adipisci aperiam blanditiis
+                                        ex laboriosam praesentium quis quod, sunt. Cum, inventore maxime molestiae quod rem sed veniam veritatis.</p>
+
+                                </div>
+                                <img src="upload/user1.jpg" height="50" width="50" class="rounded-circle img-thumbnail img-user3"/>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col">
+                        <div class="comment-users3 ">
+                            <div class="feel1 wow slideInUp" data-wow-duration="12s">
+
+                                <div class="commend bg-faded">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus libero quas quisquam. Adipisci aperiam blanditiis
+                                        ex laboriosam praesentium quis quod, sunt. Cum, inventore maxime molestiae quod rem sed veniam veritatis.</p>
+
+                                </div>
+                                <img src="upload/user1.jpg" height="50" width="50" class="rounded-circle img-thumbnail img-user4"/>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="s-member">
+            <span>THÀNH VIÊN THÀNH LẬP <strong>PENGUIN</strong></span>
+        </section>
+        <section class="pt-4">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col col-sm-3">
+                        <div class="card p-3">
+                            <img class="card-img-top rounded-circle img-introduce" src="upload/trang.jpg" alt="Card image cap">
+                            <div class="card-block bg-faded">
+                                <span class="card-title card-title-name">MS. TR-TRANG</span>
+                                <p class="card-text">Thiết kế website.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-3">
+                        <div class="card  p-3">
+                            <img class="card-img-top img-responsive rounded-circle img-introduce" src="upload/coho.jpg" alt="Card image cap">
+                            <div class="card-block bg-faded">
+                                <span class="card-title card-title-name">MR. VƯƠNG VŨ</span>
+                                <p class="card-text">Thiết kế app android.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <footer>
+           <section class="footer-custom mt-5 bg-faded">
+               <div class="logo-footer">
+
+                   <img src="upload/logolg.png" height="60" width="60" class="rounded-circle img-thumbnail"/>
+               </div>
+               <div class="container mt-5">
+                   <div class="row">
+                       <div class="col">
+                           <div class="row">
+                               <div class="col">
+                                   <h3 class="title-logo-footer">PENGUIN</h3>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col">
+                                   <ul class="list-link">
+                                       <li><a href="#">Giới thiệu</a></li>
+                                       <li><a href="#">Khóa học</a></li>
+                                       <li><a href="#">Liên hệ</a></li>
+                                       <li><a href="#">Đội ngũ</a></li>
+                                       <li><a href="#">Điều kiện sử dụng</a></li>
+                                       <li><a href="#">Chính sách bảo mật</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col">
+                           <h4>Liên kết</h4>
+                           <ul class="list-link">
+                               <li><a href="#">Memrise</a></li>
+                               <li><a href="#">Lingoes</a></li>
+                               <li><a href="#">Ngoaingu24h</a></li>
+                               <li><a href="#">Miss Hoa toeic</a></li>
+                               <li><a href="#">Oxfordlearnersdictionaries</a></li>
+                               <li><a href="#">translate.google</a></li>
+                           </ul>
+                       </div>
+                       <div class="col">
+                           <h4 >Khóa học mới</h4>
+                           <ul class="list-link">
+                               <li><a href="#">Giao tiếp hàng ngày</a></li>
+                               <li><a href="#">Video pháp âm</a></li>
+                               <li><a href="#">Unit 1 chào hỏi</a></li>
+                               <li><a href="#">Học đếm</a></li>
+                               <li><a href="#">Nghe nhạc tiếng anh</a></li>
+                               <li><a href="#">Đọc tryện tiếng anh</a></li>
+                           </ul>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col">
+                           <hr class="hr-footer">
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col">
+                           <h4 >Trợ giúp</h4>
+                           <ul class="list-link">
+                               <li><a href="#">Câu hỏi thường gặp & Trợ giúp</a></li>
+                               <li><a href="#">Lấy lại mật khẩu</a></li>
+                               <li><a href="#">Cố vấn học tập</a></li>
+                           </ul>
+                       </div>
+                       <div class="col">
+                           <div class="row">
+                               <div class="col">
+                                   <h3 class="title-logo-footer text-center ">Liên hệ</h3>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col col-icon-society  ">
+                                   <ul class="icon-society ">
+                                       <li><a href="#"><img src="https://phepthuat.com/images/icons/social/facebook.svg"
+                                                            alt="Facebook" width="50" height="50" /></a></li>
+                                       <li><a href="#"><img src="https://phepthuat.com/images/icons/social/google-plus.svg"
+                                                            alt="Google plus" width="50" height="50" /></a></li>
+                                       <li><a href="#"><img src="https://phepthuat.com/images/icons/social/skype.svg"
+                                                            alt="skype" width="50" height="50" /></a></li>
+                                       <li><a href="#"><img src="https://phepthuat.com/images/icons/social/youtube-1.svg"
+                                                            alt="youtube" width="50" height="50" /></a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+           </section>
+           <section class="footer-lisence">
+               <div class="container">
+                   <div class="row">
+                       <div class="col pt-2">
+                           <p style="color: #FFFFFF;font-weight:bold">&copy; Copyright 2018 by Penguin</p>
+                       </div>
+                   </div>
+               </div>
+           </section>
+       </footer>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel(
+                {
+                    loop:true,
+                    margin:10,
+                    autoWidth:true,
+                    items:4,
+                    autoHeight:true,
+                    autoplay:true,
+                    autoplayTimeout:1000,
+                    autoplayHoverPause:true,
+                    responsiveClass:true,
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:true
+                        },
+                        600:{
+                            items:3,
+                            nav:false
+                        },
+                        1000:{
+                            items:5,
+                            nav:true,
+                            loop:false
+                        }
+                    }
+
+                }
+            );
+        });
+    </script>
+    <script>
+        $(function () {
+            $(this).scroll(function () {
+                new WOW().init();
+            });
+            $(".media-hover strong").hover(function () {
+
+            })
+        });
+    </script>
+    <script src="js/app.js"></script>
+    <script src="https://drive.google.com/drive/folders/14mmJADQz-6UyXnyV1c7NUJpm7h18AAPr?usp=sharing"></script>
+</body>
+</html>
